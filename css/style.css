@@ -1,0 +1,155 @@
+@font-face {
+    font-family: 'Plaza';
+    src: url(../fonts/Plaza.ttf);
+}
+
+@font-face {
+    font-family: 'Anastacia';
+    src: url(../fonts/Anastacia.ttf);
+}
+
+@font-face {
+    font-family: 'Andes';
+    src: url(../fonts/Andes.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #076f64;
+    background-image: url('../images/rapture.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.general-header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+}
+
+.centralized-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-container {
+    position: relative;
+    width: 200px;
+    height: auto;
+}
+
+.main-slogan {
+    margin: 0;
+}
+
+.general-known-rapture {
+    position: fixed;
+    left: 0;
+    height: 400px;
+    width: 600px;
+    margin: 50px 0px 0px 20px;
+}
+
+.rapture-description-text {
+    font-family: 'Plaza';
+    font-size: 16px;
+    font-weight: bold;
+    color: #f6bb72;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.form-div {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.9px);
+    -webkit-backdrop-filter: blur(3.9px);
+    border: 1px solid rgba(255, 255, 255, 0.29);
+    margin: 50px 10px;
+    height: 400px;
+    width: 600px;
+    position: fixed;
+    right: 0;
+}
+
+.form-properties {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-slogan,
+.rapture-welcome-title,
+.form-title {
+    font-family: 'Plaza';
+    font-size: 26px;
+    font-weight: 600;
+    color: #f6bb72;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+}
+
+.input-full-name,
+.input-occupation,
+.input-age,
+.input-gender {
+    height: 50px;
+    width: 400px;
+    margin: 10px 0px 0px 10px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    border-color: #f6bb72;
+    font-family: 'Anastacia';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.input-full-name:focus,
+.input-occupation:focus,
+.input-age:focus,
+.input-gender:focus {
+    border-color: #f2e313;
+}
+
+.submit-button-div {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px 0px 0px;
+}
+
+.submit-button {
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #f6bb72;
+    cursor: pointer;
+    border: none;
+    font-family: 'Anastacia';
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.submit-button:hover {
+    background-color: #854c3f;
+}
+
+.footer-warning {
+    font-family: 'Andes';
+    text-align: center;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

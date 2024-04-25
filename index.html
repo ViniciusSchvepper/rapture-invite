@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conheça Rapture!</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="general-header">
+        <div class="centralized-header">
+            <img src="../images/bioshock_lighthouse_logo.png" class="image-container">
+            <p class="main-slogan">
+                No gods or kings. Only man!
+            </p>
+        </div>
+    </div>
+    <div class="general-known-rapture">
+        <div class="rapture-welcome-title">
+            <p>
+                Conheça Rapture
+            </p>
+        </div>
+        <div class="rapture-description-text">
+            <p>
+                Rapture é uma cidade submersa ricamente industrializada, com o proposito de de servir como um escape das restrições politicas,
+                sociais e relogiosas. Finzalida no final de 1951, a cidade é localizada no norte do Oceano Atlantico, aproximadamente 433km do 
+                oeste de Reykjavik, capital da Islândia. <br>
+                Se você possui uma mente brilhante, é um gênio determinado, Rapture te aguarda de braços abertos!
+            </p>
+        </div>
+    </div>
+    <div class="form-div">
+        <div class="form-title">
+            <p>
+                Envie uma carta de inscrição:
+            </p>
+        </div>
+        <form class="form-properties" action="../php/getData.php" method="post">
+            <input type="text" name="full-name" id="input-full-name" class="input-full-name" placeholder="Nome completo">
+            <input type="text" name="occupation" id="input-occupation" class="input-occupation" placeholder="Ocupação">
+            <input type="text" name="age" id="input-age" class="input-age" placeholder="Idade">
+            <select name="gender" id="input-gender" class="input-gender">
+                <option value="" disabled selected hidden>Selecione seu género</option>
+                <option value="Man">Homem</option>
+                <option value="Woman">Mulher</option>
+                <option value="Other">Outro</option>
+                <option value="No-answer">Prefiro não responder</option>
+            </select>
+            <div class="submit-button-div">
+                <button type="submit" class="submit-button">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <div class="footer-warning">
+        <p>
+            This landing page is used as study material only!
+        </p>
+    </div>
+</body>
+</html>
