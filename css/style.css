@@ -20,6 +20,7 @@ body {
     background-size: cover;
     background-position: center;
     height: 100vh;
+    overflow-y: auto;
 }
 
 .general-header {
@@ -49,7 +50,8 @@ body {
 }
 
 .general-known-rapture {
-    position: fixed;
+    /* position: fixed; */
+    position: static;
     left: 0;
     height: 400px;
     width: 600px;
@@ -77,10 +79,10 @@ body {
     width: 600px;
     position: fixed;
     right: 0;
+    position: static;
 }
 
 .form-properties {
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,6 +118,10 @@ body {
     justify-content: center;
 }
 
+.input-gender {
+    cursor: pointer;
+}
+
 .input-full-name:focus,
 .input-occupation:focus,
 .input-age:focus,
@@ -145,11 +151,25 @@ body {
     background-color: #854c3f;
 }
 
+.rapture-offers {
+    border:1px solid red;
+    font-family: 'Anastacia';
+    text-align: center;
+    color: #f6bb72;
+    text-shadow: 1px 1px 2px black;
+}
+
+
+
+
+
+
+
 .footer-warning {
     font-family: 'Andes';
     text-align: center;
     color: white;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
 }
