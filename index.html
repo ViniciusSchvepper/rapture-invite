@@ -6,6 +6,7 @@
     <title>Conheça Rapture!</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/bioshock_lighthouse_logo.ico">
+    <script src="js/changeSection.js"></script>
 </head>
 <body>
     <div class="general-header">
@@ -16,45 +17,47 @@
             </p>
         </div>
     </div>
-    <div class="general-known-rapture">
-        <div class="rapture-welcome-title">
-            <p>
-                Conheça Rapture
-            </p>
-        </div>
-        <div class="rapture-description-text">
-            <p>
-                Rapture é uma cidade submersa ricamente industrializada, com o proposito de de servir como um escape das restrições politicas,
-                sociais e relogiosas. Finzalida no final de 1951, a cidade é localizada no norte do Oceano Atlantico, aproximadamente 433km do 
-                oeste de Reykjavik, capital da Islândia. <br>
-                Uma cidade onde os artitas não precisam temer a censura. <br>
-                Onde os cientistas não precisam não serão restringidos pela moralidade. <br>
-                Onde o grande não será limitado pelo pequeno. <br>
-                Se você possui uma mente brilhante, é um gênio determinado, Rapture te aguarda de braços abertos!
-            </p>
-        </div>
-    </div>
-    <div class="form-div">
-        <div class="form-title">
-            <p>
-                Envie uma carta de inscrição:
-            </p>
-        </div>
-        <form class="form-properties" action="php/getData.php" method="post">
-            <input type="text" name="full-name" id="input-full-name" class="input-full-name" placeholder="Nome completo">
-            <input type="text" name="occupation" id="input-occupation" class="input-occupation" placeholder="Ocupação">
-            <input type="text" name="age" id="input-age" class="input-age" placeholder="Idade">
-            <select name="gender" id="input-gender" class="input-gender">
-                <option value="" disabled selected hidden>Selecione seu género</option>
-                <option value="Man">Homem</option>
-                <option value="Woman">Mulher</option>
-                <option value="Other">Outro</option>
-                <option value="No-answer">Prefiro não responder</option>
-            </select>
-            <div class="submit-button-div">
-                <button type="submit" class="submit-button">Enviar</button>
+    <div class="initial-grid">
+        <div class="general-known-rapture">
+            <div class="rapture-welcome-title">
+                <p>
+                    Conheça Rapture
+                </p>
             </div>
-        </form>
+            <div class="rapture-description-text">
+                <p>
+                    Rapture é uma cidade submersa ricamente industrializada, com o proposito de de servir como um escape das restrições politicas,
+                    sociais e relogiosas. Finzalida no final de 1951, a cidade é localizada no norte do Oceano Atlantico, aproximadamente 433km do 
+                    oeste de Reykjavik, capital da Islândia. <br>
+                    Uma cidade onde os artitas não precisam temer a censura. <br>
+                    Onde os cientistas não precisam não serão restringidos pela moralidade. <br>
+                    Onde o grande não será limitado pelo pequeno. <br>
+                    Se você possui uma mente brilhante, é um gênio determinado, Rapture te aguarda de braços abertos!
+                </p>
+            </div>
+        </div>
+        <div class="form-div">
+            <div class="form-title">
+                <p>
+                    Envie uma carta de inscrição:
+                </p>
+            </div>
+            <form class="form-properties" action="php/getData.php" method="post">
+                <input type="text" name="full-name" id="input-full-name" class="input-full-name" placeholder="Nome completo">
+                <input type="text" name="occupation" id="input-occupation" class="input-occupation" placeholder="Ocupação">
+                <input type="text" name="age" id="input-age" class="input-age" placeholder="Idade">
+                <select name="gender" id="input-gender" class="input-gender">
+                    <option value="" disabled selected hidden>Selecione seu género</option>
+                    <option value="Man">Homem</option>
+                    <option value="Woman">Mulher</option>
+                    <option value="Other">Outro</option>
+                    <option value="No-answer">Prefiro não responder</option>
+                </select>
+                <div class="submit-button-div">
+                    <button type="submit" class="submit-button">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
     <div class="rapture-offers">
         <div class="rapture-offers-title">
@@ -64,18 +67,79 @@
         </div>
         <div class="info-vita-chambers">
             <h2>
-                Vita chambers
+                Vita-chambers
             </h2>
         </div>
         <div class="info-plasmids">
             <h2>
                 Plasmids
             </h2>
+            <div class="plasmids-options">
+                <div class="plasmid-button" onclick="toggleDiv('cyclone-trap-div')">
+                    Cyclone Trap
+                    <img src="images/plasmids/cyclone_trap.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('electrobolt-div')">
+                    Electrobolt
+                    <img src="images/plasmids/electrobolt.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('enrage-div')">
+                    Enrage
+                    <img src="images/plasmids/enrage.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('hipnotize-big-daddy-div')">
+                    Hypnotize Big Daddy
+                    <img src="images/plasmids/hipnotize_big_daddy.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('incinerate-div')">
+                    Incinerate
+                    <img src="images/plasmids/incinerate.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('insect-swarm-div')">
+                    Insect Swarm
+                    <img src="images/plasmids/insect_swarm.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('security-bullseye-div')">
+                    Security Bullseye
+                    <img src="images/plasmids/security_bullseye.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('target-dummy-div')">
+                    Target Dummy
+                    <img src="images/plasmids/target_dummy.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('telekinesis-div')">
+                    Telekinesis
+                    <img src="images/plasmids/telekinesis.png" class="image-container-button">
+                </div>
+                <div class="plasmid-button" onclick="toggleDiv('winter-blast-div')">
+                    Winter Blast
+                    <img src="images/plasmids/winter-blast.png" class="image-container-button">
+                </div>
+            </div>
+            <div id="plasmids-divs">
+                <div id="cyclone-trap-div" class="plasmid-description" style="display: none;">
+                    <div class="plasmid-text">
+                        Crie um pequeno tornado que jogará ao ar qualquer um que pise nele! <br>
+                        Adquira-o agora mesmo no Jardim do Coletor em Arcadia!
+                    </div>
+                    <div class="plasmid-video">
+                        <video controls autoplay loop muted>
+                            <source src="videos/PlasmidVortexTrapTraining (360p).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div id="electrobolt-div" class="plasmid-description">
+                    <div class="plasmid-text">
+                        Eletrocute alvos, ou use para abrir diversas portas com mal funcionamento ao redor de Rapture!
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer-warning">
         <p>
-            This landing page is used as study material only!
+            This landing page is used as study material only! <br>
+            The facts apresented wont represent the real game history.
         </p>
     </div>
 </body>
